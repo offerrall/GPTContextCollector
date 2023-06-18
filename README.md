@@ -2,7 +2,7 @@
 
 GPTContextCollector is a simple desktop application that allows you to easily collect the content of files and copy it to the clipboard. It is designed to be used in conjunction with question-and-answer AI models like ChatGPT.
 
-![image](https://i.imgur.com/UXimXcF.png)
+![image](https://i.imgur.com/7S609uC.png)
 
 ## Requirements
 

@@ -47,7 +47,7 @@ class MainApp(QMainWindow, Ui_Form):
 
         try:
             for i in read.split("\n"):
-                if i:
+                if i and exists(i) and i not in self.bd_files:
                     self.bd_files.append(i)
         except:
             return msg_box(f"Error reading file '{file_path}'")
@@ -81,6 +81,10 @@ class MainApp(QMainWindow, Ui_Form):
 
     def copy_to_clipboard(self):
         main_str = ""
+
+        main_str += "Query:\n"
+        main_str += self.txt_question.toPlainText()
+        main_str += "\n\n"
 
         for file in self.bd_files:
             try:
