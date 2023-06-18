@@ -90,6 +90,9 @@ class MainApp(QMainWindow, Ui_Form):
             except Exception as e:
                 return msg_box(f"Error reading file '{file}'\n{e}")
         
+        if self.ck_delete_spaces.isChecked():
+            main_str = main_str.replace(" ", "")
+
         QApplication.clipboard().setText(main_str)
 
         return msg_box("Copied to clipboard")

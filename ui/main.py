@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QHeaderView, QPushButton,
-    QSizePolicy, QSpacerItem, QTableWidget, QTableWidgetItem,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QGroupBox, QHBoxLayout,
+    QHeaderView, QPushButton, QSizePolicy, QSpacerItem,
+    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -67,6 +67,18 @@ class Ui_Form(object):
 
         self.verticalLayout.addWidget(self.content_table)
 
+        self.groupBox = QGroupBox(Form)
+        self.groupBox.setObjectName(u"groupBox")
+        self.horizontalLayout_2 = QHBoxLayout(self.groupBox)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.ck_delete_spaces = QCheckBox(self.groupBox)
+        self.ck_delete_spaces.setObjectName(u"ck_delete_spaces")
+
+        self.horizontalLayout_2.addWidget(self.ck_delete_spaces)
+
+
+        self.verticalLayout.addWidget(self.groupBox)
+
         self.bt_copy = QPushButton(Form)
         self.bt_copy.setObjectName(u"bt_copy")
 
@@ -88,6 +100,8 @@ class Ui_Form(object):
         ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"Delete", None));
         ___qtablewidgetitem1 = self.content_table.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("Form", u"Path", None));
+        self.groupBox.setTitle(QCoreApplication.translate("Form", u"Options", None))
+        self.ck_delete_spaces.setText(QCoreApplication.translate("Form", u"Delete spaces", None))
         self.bt_copy.setText(QCoreApplication.translate("Form", u"Copy Context", None))
     # retranslateUi
 
