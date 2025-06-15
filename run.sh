@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 BASE_DIR="$(dirname "$0")"
-VENV="$BASE_DIR/venv"
+VENV="$HOME/.venvs/global"
 
 if [[ -f "$BASE_DIR/main.pyw" ]]; then
   SCRIPT="$BASE_DIR/main.pyw"
