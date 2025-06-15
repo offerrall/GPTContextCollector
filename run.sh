@@ -1,3 +1,3 @@
 #!/bin/zsh
 source "$(dirname "$0")/venv/bin/activate"
-python "$(dirname "$0")/main.py"
+python "$(dirname "$0")/main.pyw"
