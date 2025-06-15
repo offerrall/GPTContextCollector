@@ -1,3 +1,8 @@
 #!/bin/zsh
-source "$(dirname "$0")/venv/bin/activate"
-python "$(dirname "$0")/main.pyw"
+
+BASE_DIR="$(dirname "$0")"
+VENV="$BASE_DIR/venv"
+SCRIPT="$BASE_DIR/main.pyw"
+
+source "$VENV/bin/activate"
+nohup python "$SCRIPT" > /dev/null 2>&1 &
