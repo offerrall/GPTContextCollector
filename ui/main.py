@@ -29,24 +29,8 @@ class Ui_Form(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.bt_new = QPushButton(Form)
-        self.bt_new.setObjectName(u"bt_new")
-
-        self.horizontalLayout.addWidget(self.bt_new)
-
-        self.bt_open = QPushButton(Form)
-        self.bt_open.setObjectName(u"bt_open")
-
-        self.horizontalLayout.addWidget(self.bt_open)
-
-        self.bt_save = QPushButton(Form)
-        self.bt_save.setObjectName(u"bt_save")
-
-        self.horizontalLayout.addWidget(self.bt_save)
 
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontalLayout.addItem(self.horizontalSpacer)
 
         self.bt_add_file = QPushButton(Form)
         self.bt_add_file.setObjectName(u"bt_add_file")
@@ -90,6 +74,7 @@ class Ui_Form(object):
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.ck_delete_spaces = QCheckBox(self.groupBox)
         self.ck_delete_spaces.setObjectName(u"ck_delete_spaces")
+        self.ck_delete_spaces.setStyleSheet(u"padding: 15px; margin: 0px;")
 
         self.horizontalLayout_2.addWidget(self.ck_delete_spaces)
 
@@ -109,9 +94,6 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.bt_new.setText(QCoreApplication.translate("Form", u"New", None))
-        self.bt_open.setText(QCoreApplication.translate("Form", u"Open", None))
-        self.bt_save.setText(QCoreApplication.translate("Form", u"Save", None))
         self.bt_add_file.setText(QCoreApplication.translate("Form", u"Add File", None))
         ___qtablewidgetitem = self.content_table.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("Form", u"Delete", None));

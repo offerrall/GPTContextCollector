@@ -106,11 +106,8 @@ class MainApp(QMainWindow, Ui_Form):
         return msg_box("Copied to clipboard")
     
     def setup_signals(self):
-        self.bt_open.clicked.connect(self.open_file)
-        self.bt_save.clicked.connect(self.save_file)
         self.bt_add_file.clicked.connect(self.add_file)
         self.bt_copy.clicked.connect(self.copy_to_clipboard)
-        self.bt_new.clicked.connect(self.reset_program)
 
     def setup_table(self):
         self.content_table.setColumnCount(2)
