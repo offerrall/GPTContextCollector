@@ -1,1 +1,1 @@
-C:/Users/offer/Desktop/StreamLedClient/qt_widgets/matrix_led
+C:/Users/offer/Desktop/PyShop_NC_sender

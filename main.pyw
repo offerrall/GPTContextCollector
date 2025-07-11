@@ -96,6 +96,10 @@ class MainApp(QMainWindow, Ui_Form):
         
         if self.ck_delete_spaces.isChecked():
             main_str = main_str.replace(" ", "")
+            main_str = main_str.replace("\n", " ")
+            main_str = main_str.replace("\t", " ")
+        
+        main_str = main_str.strip()
 
         QApplication.clipboard().setText(main_str)
 
