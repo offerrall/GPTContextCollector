@@ -1,20 +1,30 @@
 # GPTContextCollector
 
-GPTContextCollector is a simple desktop application that allows you to easily collect the content of files and copy it to the clipboard. It is designed to be used in conjunction with question-and-answer AI models like ChatGPT.
+A simple desktop application to collect file contents and copy them to the clipboard, designed to work with AI models like ChatGPT, Claude, and others.
 
 ![image](https://i.imgur.com/7S609uC.png)
 
-## Requirements
+## Installation
 
-- Python 3.7 or higher
-- PySide6
+```bash
+git clone https://github.com/yourusername/gptcontextcollector.git
+cd gptcontextcollector
+pip install .
+```
 
 ## Usage
 
-1. Run the GPTContextCollector application.
-2. Click on the "Add Path" button to select the files you want to collect.
-3. Use the "Copy to Clipboard" button to copy the content of the selected files to the clipboard.
-4. Paste the content into the question-and-answer AI to use it in your interactions.
+### Run the application
 
-Simplify the process of collecting context for question-and-answer AI models with GPTContextCollector!
+```bash
+gpt
+```
 
+## Requirements
+
+- Python 3.8+
+- PySide6
+
+## License
+
+MIT
