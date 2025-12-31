@@ -5,7 +5,7 @@ import sys
 def main():
     """Main entry point for the CLI."""
     from PySide6.QtWidgets import QApplication
-    from gptcontextcollector.main import MainApp
+    from .main import MainApp
     
     app = QApplication(sys.argv)
     window = MainApp()

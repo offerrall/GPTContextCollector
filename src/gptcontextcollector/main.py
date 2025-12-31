@@ -6,8 +6,8 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget,
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
 
-from gptcontextcollector.ui.main import Ui_Form
-from gptcontextcollector.utils import msg_box, file_dialog, read_file
+from .ui.main import Ui_Form
+from .utils import msg_box, file_dialog, read_file
 
 # Get package directory for resources
 PACKAGE_DIR = Path(__file__).parent
